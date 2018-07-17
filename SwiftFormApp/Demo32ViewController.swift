@@ -25,6 +25,7 @@ class Demo32ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var lblResultCount: UILabel!
+    @IBOutlet weak var viewResultCount: UIView!
     @IBOutlet weak var pickerGreaterThan: UIPickerView!
     @IBOutlet weak var pickerLessThan: UIPickerView!
 
@@ -60,7 +61,7 @@ class Demo32ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                 self.arrTbvData = objects!
                 self.lblResultCount.text = String(format: NSLocalizedString("Conditional search (range designation) result", comment: ""), UInt(self.arrTbvData.count))
                 self.table.reloadData()
-                self.lblResultCount.isHidden = false
+                self.viewResultCount.isHidden = false
                 ProgressHUD.dismiss()
             }, errorCallback: { error in
                 ProgressHUD.dismiss()

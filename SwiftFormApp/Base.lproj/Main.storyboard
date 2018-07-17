@@ -416,6 +416,7 @@
                         <outlet property="pickerGreaterThan" destination="dy6-gs-6k1" id="0Ox-kr-K4l"/>
                         <outlet property="pickerLessThan" destination="Md7-22-v6h" id="gqE-Il-KXt"/>
                         <outlet property="table" destination="lgr-dl-Nf5" id="hWO-yv-Mcs"/>
+                        <outlet property="viewResultCount" destination="7lK-vy-JPQ" id="4RF-aS-MnG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmN-gK-1si" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -881,6 +882,7 @@
                         <outlet property="pickerPre" destination="koB-c6-8Pz" id="rjg-PE-n80"/>
                         <outlet property="table" destination="KiN-eO-bbH" id="BBi-Ch-2UI"/>
                         <outlet property="txtEmail" destination="ePX-UV-uvd" id="g0O-XG-vpt"/>
+                        <outlet property="viewResultCount" destination="KFG-J9-aIk" id="eJV-6q-0mn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ig-ts-ybG" userLabel="First Responder" sceneMemberID="firstResponder"/>

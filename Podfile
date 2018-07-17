@@ -9,5 +9,6 @@ target 'SwiftFormApp' do
   pod 'NCMB', :git => 'https://github.com/NIFTYCloud-mbaas/ncmb_ios.git'
   pod 'UITextView+Placeholder'
   pod 'ProgressHUD'
+  pod 'IQKeyboardManagerSwift'
 
 end
