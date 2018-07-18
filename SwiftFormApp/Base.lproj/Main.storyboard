@@ -659,7 +659,7 @@
                         <outlet property="txtContents" destination="cmF-ja-Fdo" id="STk-Vt-og1"/>
                         <outlet property="txtEmail" destination="oZU-oD-vZY" id="igc-bf-oHB"/>
                         <outlet property="txtName" destination="eRt-ST-Eij" id="5Oi-Yt-M2h"/>
-                        <outletCollection property="txtTitle" destination="PiF-6q-UVT" collectionClass="NSMutableArray" id="krw-Va-LIp"/>
+                        <outlet property="txtTitle" destination="PiF-6q-UVT" id="dua-aR-RRA"/>
                         <outletCollection property="txtContents" destination="cmF-ja-Fdo" collectionClass="NSMutableArray" id="Aon-oo-5SF"/>
                     </connections>
                 </viewController>

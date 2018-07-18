@@ -65,10 +65,14 @@ class Demo2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? DataTableViewCell
 
         if arrData.count > 0 {
-            let obj = arrData[indexPath.row] as? NCMBObject
-            cell?.lblTitle.text = obj?.object(forKey: "title") as? String
-            cell?.lblCreatedDate.text = Utils.formatDate(obj?.object(forKey: "createDate") as? String)
-            let contents: String? = String.localizedStringWithFormat("%@ (%@) - %@ - %@", (obj?.object(forKey: "name") as? String)!,(obj?.object(forKey: "prefecture") as? String)!, (obj?.object(forKey: "age") as? NSNumber)!, (obj?.object(forKey: "emailAddress") as? String)!)
+            let obj = arrData[indexPath.row] as! NCMBObject
+            cell?.lblTitle.text = obj.object(forKey: "title") as? String
+            cell?.lblCreatedDate.text = Utils.formatDate(obj.object(forKey: "createDate") as? String)
+            let name = obj.object(forKey: "name") as? String
+            let pre = obj.object(forKey: "prefecture") as? String
+            let age = obj.object(forKey: "age") as? NSNumber
+            let email = obj.object(forKey: "emailAddress") as? String
+            let contents = String(format:"%@ (%@) - %@ - %@", name!, pre!, age!, email!)
             cell?.lblContents.text = contents
         }
         return cell!

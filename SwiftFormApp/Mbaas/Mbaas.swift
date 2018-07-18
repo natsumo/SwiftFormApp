@@ -27,13 +27,12 @@ class Mbaas {
         // 保存先クラスの作成
         let object = NCMBObject(className: "Inquiry")
         // データの設定と保存
-        object?.add(name, forKey: "name")
-        object?.add(email, forKey: "emailAddress")
-        object?.add(age, forKey: "age")
-        object?.add(prefecture, forKey: "prefecture")
-        object?.add(prefecture, forKey: "prefecture")
-        object?.add(title, forKey: "prefecture")
-        object?.add(contents, forKey: "contents")
+        object?.setObject(name, forKey: "name")
+        object?.setObject(email, forKey: "emailAddress")
+        object?.setObject(age, forKey: "age")
+        object?.setObject(prefecture, forKey: "prefecture")
+        object?.setObject(title, forKey: "title")
+        object?.setObject(contents, forKey: "contents")
         object?.saveInBackground({error in
             //保存失敗
             errorCallback(error)
